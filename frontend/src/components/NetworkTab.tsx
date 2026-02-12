@@ -16,7 +16,7 @@ const NetworkTab: React.FC = () => {
     const start = Date.now();
     try {
       // Pinging the root endpoint as requested
-      const response = await fetch('http://127.0.0.1:8000/', { method: 'GET' });
+      const response = await fetch('https://farmlence-1.onrender.com/', { method: 'GET' });
       const latency = Date.now() - start;
       if (response.ok) {
         setStatus({
