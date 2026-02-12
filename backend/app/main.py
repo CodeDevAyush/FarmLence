@@ -16,11 +16,15 @@ app = FastAPI(title="ONLYTECH API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # allow React dev server
+    allow_origins=[
+        "http://localhost:3000",
+        "https://https://farm-lence.vercel.app/"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 
 UPLOAD_DIR = "uploads"
