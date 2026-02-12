@@ -42,7 +42,7 @@ const HomeTab: React.FC<HomeTabProps> = ({ addScanToHistory, threshold }) => {
       const formData = new FormData();
       formData.append("file", selectedFile);
 
-      const res = await fetch("http://https://farmlence-1.onrender.com/scan", {
+      const res = await fetch("http://farmlence-1.onrender.com/scan", {
         method: "POST",
         body: formData,
       });
