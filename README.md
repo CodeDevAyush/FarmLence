@@ -73,7 +73,8 @@ FarmLence/
 
 The project is configured for live deployment with CORS support for the following production origin:
 
-* `https://farm-lence.vercel.app`
+* **Frontend** `https://farm-lence.vercel.app`
+* **Backend** `https://farmlence-1.onrender.com`
 
 ---
 
