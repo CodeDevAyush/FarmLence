@@ -34,3 +34,18 @@ export interface NetworkStatus {
   latency: number | null;
   lastChecked: number;
 }
+
+export interface ChatMessage {
+  role: 'user' | 'ai';
+  text: string;
+}
+
+export interface ChatContext {
+  crop: string;
+  disease: string;
+  confidence: number;
+  treatment: string;
+  safety: string;
+  cost_option: string;
+  sustainability: string;
+}
