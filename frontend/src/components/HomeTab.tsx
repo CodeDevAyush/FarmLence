@@ -1,5 +1,5 @@
 
-import React, { useState, useRef, useCallback, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { ScanResult, ChatMessage } from '../types';
 
 const API_BASE = "https://farmlence-1.onrender.com";
