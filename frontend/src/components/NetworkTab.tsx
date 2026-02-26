@@ -40,11 +40,11 @@ const NetworkTab: React.FC = () => {
     }
   };
 
-  useEffect(() => {
-    checkStatus();
-    const interval = setInterval(checkStatus, 5000);
-    return () => clearInterval(interval);
-  }, []);
+useEffect(() => {
+  checkStatus();
+  const interval = setInterval(checkStatus, 30000); // Changed from 5000 to 30000
+  return () => clearInterval(interval);
+}, []);
 
   return (
     <div className="space-y-6 animate-in fade-in duration-500">
